@@ -1,7 +1,7 @@
 FROM centos:8
 MAINTAINER Stefan Schueffler <s.schueffler@softgarden.de>
 
-RUN    rpm --import http://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-8 \
+RUN    rpm --import http://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-8.rpm \
     && yum -y install epel-release \
     && yum -y update \
     && yum -y install clamav-update clamd \
